@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/inscription.css">
+    <title>Page d'inscriptiion</title>
+</head>
+<body>
+    <main> 
+        <section class="content">
+            <h1>Inscrivez-vous</h1>
+        </section>
+        <hr>
+        <section class="container">
+            <form action="inscription" method="post" id="loginELt">
+                <label for="lastname">Nom :</label>
+                <input type="text" id="lastname" name="lastname" required>
+ 
+                <label for="firstname">Prenom :</label>
+                <input type="text" id="firstname" name="firstname" required>
+
+                <label for="age">Age :</label>
+                <input type="number" id="age" name="age" required>
+                <div class="genre">
+                <label for="gender">Genre :</label>
+                <select id="gender">
+                    <option value=""></option>
+                <option value="homme">HOMME</option>
+                <option value="femme">FEMME</option>
+                </select>
+                </div>
+                
+                <label for="date_de_naissance">Date de naissance :</label>
+                <input type="date" name="date_de_naissance" id="date_de_naissance" required>
+
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="password">Password :</label>
+                <input type="password" name="password" id="password" required>
+
+                <button type="submit" onclick="submitForm()">S'inscrire</button>
+                       <a href="./Accueil.html">Connecter</a>            
+
+            </form>
+            <script src="../script/inscription.js"></script>
+        </section>
+    </main>
+</body>
+</html>
